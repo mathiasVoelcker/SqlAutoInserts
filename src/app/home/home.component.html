@@ -1,0 +1,31 @@
+<form [formGroup]="form" (ngSubmit)="generateScript()">
+  <input formControlName="tableName" class="form-control" type="text"/>
+  <h3>Column 1</h3>
+  <div formGroupName="column1" class="field">
+    <label>Name</label>
+    <input formControlName="name" class="form-control" type="text"/>
+    <input formControlName="type" class="form-control" type="text"/>
+  </div>
+  <h3>Column 2</h3>
+  <div formGroupName="column2" class="field">
+    <label>Name</label>
+    <input formControlName="name" class="form-control" type="text"/>
+    <input formControlName="type" class="form-control" type="text"/>
+  </div>
+  <h3>Column 3</h3>
+  <div formGroupName="column3" class="field">
+    <label>Name</label>
+    <input formControlName="name" class="form-control" type="text"/>
+    <input formControlName="type" class="form-control" type="text"/>
+  </div>
+  <h3>Column 4</h3>
+  <div formGroupName="column4" class="field">
+    <label>Name</label>
+    <input formControlName="name" class="form-control" type="text"/>
+    <input formControlName="type" class="form-control" type="text"/>
+  </div>
+  <button class="btn btn-primary">Generate Script</button>
+  <div>
+    <label>{{script}}</label>
+  </div>
+</form>
